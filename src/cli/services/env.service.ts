@@ -125,6 +125,11 @@ export class EnvService {
     if (tgt !== src) {
       logger.debug({ src, tgt }, 'url replaced');
     }
+
+    if (env.CONTAINERBASE_CDN) {
+      tgt = tgt.replace('//', `//${env.CONTAINERBASE_CDN}/`);
+    }
+
     return tgt;
   }
 }

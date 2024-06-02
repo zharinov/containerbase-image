@@ -10,6 +10,8 @@ ARG CACHE_WEEK
 
 ARG CONTAINERBASE_VERSION
 
+ARG CONTAINERBASE_CDN
+
 LABEL maintainer="Rhys Arkins <rhys@arkins.net>" \
   org.opencontainers.image.source="https://github.com/containerbase/base"
 

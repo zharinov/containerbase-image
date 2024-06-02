@@ -10,6 +10,9 @@ variable "TAG" {
 variable "CONTAINERBASE_VERSION" {
   default = "unknown"
 }
+variable "CONTAINERBASE_CDN" {
+  default = "https://cdn.containerbase.dev"
+}
 
 variable "APT_HTTP_PROXY" {
   default = ""
